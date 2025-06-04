@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "我的 AI 笔记"
-  text: "我的AI学习笔记"
+  name: "My Awesome Project"
+  text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
