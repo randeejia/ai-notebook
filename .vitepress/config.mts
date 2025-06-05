@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'My Awesome Project',
+    title: 'AI学习笔记',
     description: 'A VitePress Site',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
@@ -13,10 +13,10 @@ export default defineConfig({
 
         sidebar: [
             {
-                text: 'Examples',
+                text: 'Guide',
                 items: [
-                    { text: 'Markdown Examples', link: '/markdown-examples' },
-                    { text: 'Runtime API Examples', link: '/api-examples' },
+                    { text: '基于AI的思考', link: '/think' },
+                    { text: '安装', link: '/chapter_installation' },
                 ],
             },
         ],
