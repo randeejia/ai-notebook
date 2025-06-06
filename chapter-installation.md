@@ -25,29 +25,26 @@ conda activate d2l
 
 1. 检查设备是否有 NVIDIA GPU;
 2. 如果有，检查设备是否已安装的 CUDA;
-3. 如果未安装，下载并安装 CUDA Toolkit;
-   [官方下载 CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-   ![Select Target Platform](./assets/chapter-installation-01.png)
+3. 如果未安装，确认 NVIDIA GPU 型号并下载对应 CUDA Toolkit 以及安装 ;
+
+#### 确认 NVIDIA GPU 型号
 
 ```bash
-pip install torch
-pip install torchvision
+ nvidia-smi  # 查看驱动和GPU状态
 ```
 
-## Results
+![查看驱动和GPU状态](./assets/chapter-installation-01.png)
 
-### Theme Data
+#### 下载对应 CUDA Toolkit
 
-<pre>{{ theme }}</pre>
+[官方下载 CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+![Select Target Platform](./assets/chapter-installation-02.png)
 
-### Page Data
+```bash
 
-<pre>{{ page }}</pre>
+pip install torch
+pip install torchvision
 
-### Page Frontmatter
-
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+pip install tensorflow
+pip install tensorflow-probability
+```
