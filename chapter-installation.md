@@ -33,12 +33,12 @@ conda activate d2l
  nvidia-smi  # 查看驱动和GPU状态
 ```
 
-![查看驱动和GPU状态](./assets/chapter-installation-01.png)
+![查看驱动和GPU状态](./assets/installation/01.png)
 
 #### 下载对应 CUDA Toolkit
 
 [官方下载 CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-![Select Target Platform](./assets/chapter-installation-02.png)
+![Select Target Platform](./assets/installation/02.png)
 
 ```bash
 
