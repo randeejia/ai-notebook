@@ -8,6 +8,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'Home', link: '/' },
+            { text: '名词术语', link: '/terms/index' },
             { text: 'Examples', link: '/markdown-examples' },
         ],
 
@@ -16,7 +17,7 @@ export default defineConfig({
                 text: 'Guide',
                 items: [
                     { text: '基于AI的思考', link: '/think' },
-                    { text: '安装', link: '/chapter_installation' },
+                    { text: '安装', link: '/chapter-installation' },
                 ],
             },
         ],

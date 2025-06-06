@@ -4,6 +4,12 @@ outline: deep
 
 # 安装
 
+## 安装 Miniconda 和 Jupyter Notebook
+
+[官方下载 CUDA Toolkit](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions)
+
+## 使用 coda 新建虚拟环境
+
 ```bash
 conda init
 
@@ -14,6 +20,14 @@ conda activate d2l
 ```
 
 ## 安装深度学习框架和 d2l 软件包
+
+### 检查清单
+
+1. 检查设备是否有 NVIDIA GPU;
+2. 如果有，检查设备是否已安装的 CUDA;
+3. 如果未安装，下载并安装 CUDA Toolkit;
+   [官方下载 CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+   ![Select Target Platform](./assets/chapter-installation-01.png)
 
 ```bash
 pip install torch
