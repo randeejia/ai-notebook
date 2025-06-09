@@ -19,3 +19,5 @@ outline: deep
 
 ![截图1](./assets/01.png)
 ![截图2](./assets/02.png)
+
+[截图 2](./aaa.md)
