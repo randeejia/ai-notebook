@@ -10,18 +10,31 @@ export default defineConfig({
             { text: '首页', link: '/' },
             { text: '名词术语', link: '/terms/index' },
             { text: '应用场景', link: '/apply-scene/index' },
-            { text: 'Examples', link: '/markdown-examples' },
+            { text: 'PyTorch框架', link: '/pytorch/index' },
         ],
 
-        sidebar: [
-            {
-                text: 'Guide',
-                items: [
-                    { text: '基于AI的思考', link: '/think' },
-                    { text: '安装', link: '/installation/index' },
-                ],
-            },
-        ],
+        sidebar: {
+            '/pytorch/': [
+                {
+                    items: [{ text: 'PyTorch框架', link: '/pytorch/index' }],
+                },
+            ],
+            '/apply-scene/': [
+                {
+                    text: '应用场景',
+                    items: [{ text: '应用场景', link: '/apply-scene/index' }],
+                },
+            ],
+            '/terms/': [
+                {
+                    text: 'Guide',
+                    items: [
+                        { text: '基于AI的思考', link: '/think' },
+                        { text: '安装', link: '/installation/index' },
+                    ],
+                },
+            ],
+        },
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
