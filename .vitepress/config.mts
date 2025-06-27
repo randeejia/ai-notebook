@@ -11,7 +11,7 @@ export default defineConfig({
             { text: '首页', link: '/' },
             { text: '名词术语', link: '/terms/index' },
             { text: '应用场景', link: '/apply-scene/index' },
-            { text: 'Python', link: '/python-language/index' },
+            { text: 'Python编程语言', link: '/python-language/index' },
             { text: 'PyTorch框架', link: '/pytorch/index' },
         ],
 
@@ -41,7 +41,7 @@ export default defineConfig({
                     text: 'Guide',
                     items: [
                         { text: '安装', link: './index' },
-                        { text: '语言基础', link: './aaa' },
+                        { text: '语言基础', link: './demo' },
                     ],
                 },
             ],
