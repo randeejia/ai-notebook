@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import markdownItMathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
             { text: '首页', link: '/' },
             { text: '名词术语', link: '/terms/index' },
             { text: '应用场景', link: '/apply-scene/index' },
+            { text: 'Python', link: '/python-language/index' },
             { text: 'PyTorch框架', link: '/pytorch/index' },
         ],
 
@@ -34,6 +36,15 @@ export default defineConfig({
                     ],
                 },
             ],
+            '/python-language/': [
+                {
+                    text: 'Guide',
+                    items: [
+                        { text: '安装', link: './index' },
+                        { text: '语言基础', link: './aaa' },
+                    ],
+                },
+            ],
         },
 
         socialLinks: [
@@ -43,6 +54,11 @@ export default defineConfig({
     vite: {
         server: {
             port: 3003,
+        },
+    },
+    markdown: {
+        config: (md) => {
+            md.use(markdownItMathjax3)
         },
     },
 })
