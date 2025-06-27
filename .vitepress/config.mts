@@ -18,21 +18,24 @@ export default defineConfig({
         sidebar: {
             '/pytorch/': [
                 {
-                    items: [{ text: 'PyTorch框架', link: '/pytorch/index' }],
+                    items: [{ text: 'PyTorch框架', link: '/index' }],
                 },
             ],
             '/apply-scene/': [
                 {
                     text: '应用场景',
-                    items: [{ text: '应用场景', link: '/apply-scene/index' }],
+                    items: [{ text: '应用场景', link: './index' }],
                 },
             ],
             '/terms/': [
                 {
                     text: 'Guide',
                     items: [
-                        { text: '基于AI的思考', link: '/think' },
-                        { text: '安装', link: '/installation/index' },
+                        { text: '名词术语', link: './index' },
+                        {
+                            text: '动手学深度学习',
+                            link: '../installation/index',
+                        },
                     ],
                 },
             ],

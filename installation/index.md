@@ -60,8 +60,8 @@ pip install tensorflow-probability
     - 在 base 环境启动 Jupyter Notebook。
     - 通过 内核（Kernel）切换 选择其他 Conda 环境的 Python 解释器（需提前注册内核）。
 
--   优点：只需维护一个 Jupyter Notebook 实例。
--   缺点：Notebook 的依赖（如 ipykernel、notebook 等）需与 base 环境兼容。
+- 优点：只需维护一个 Jupyter Notebook 实例。
+- 缺点：Notebook 的依赖（如 ipykernel、notebook 等）需与 base 环境兼容。
 
 ### 如何注册其他环境的内核？
 
@@ -78,12 +78,12 @@ python -m ipykernel install --user --name d2l --display-name "Python (d2l)"
 
 ![多内核的Jupyter Notebook](./assets/03.png)
 
-2. **独立安装（每个环境一套）** ：如果你在每个 Conda 环境中单独安装 Jupyter Notebook，那么你需要在每个 Conda 环境中单独安装 Jupyter Notebook（例如在每个环境中运行 conda install jupyter），则每个环境会拥有独立的 Jupyter Notebook 副本及其依赖。
+2.**独立安装（每个环境一套）** ：如果你在每个 Conda 环境中单独安装 Jupyter Notebook，那么你需要在每个 Conda 环境中单独安装 Jupyter Notebook（例如在每个环境中运行 conda install jupyter），则每个环境会拥有独立的 Jupyter Notebook 副本及其依赖。
 
--   优点：环境完全隔离，避免依赖冲突。
--   缺点：占用更多磁盘空间，需分别维护。
+- 优点：环境完全隔离，避免依赖冲突。
+- 缺点：占用更多磁盘空间，需分别维护。
 
-3. **验证方式**
+3.**验证方式**
 
 ```bash
 
