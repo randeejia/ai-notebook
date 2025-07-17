@@ -7,7 +7,6 @@ outline: deep
 ## if else
 
 > if,elif,else
-
 > 单分支 if ...
 > 双分支:if ... else ....
 > 多分支:if...elif...elif...else
