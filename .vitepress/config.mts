@@ -4,7 +4,7 @@ import markdownItMathjax3 from 'markdown-it-mathjax3'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'AI学习笔记',
-    description: 'A VitePress Site',
+    description: 'A Notebook Site',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -13,13 +13,21 @@ export default defineConfig({
             { text: '应用场景', link: '/apply-scene/index' },
             { text: '编程语言', link: '/python-language/index' },
             { text: '机器学习', link: '/machine-learning/index' },
-            { text: '深度学习', link: '/pytorch/index' },
+            { text: '深度学习', link: '/deep-learning/index' },
         ],
 
         sidebar: {
-            '/pytorch/': [
+            '/': [
                 {
-                    items: [{ text: 'PyTorch框架', link: '/index' }],
+                    items: [{ text: '基于 AI 的思考', link: '/think' }],
+                },
+            ],
+
+            '/deep-learning/': [
+                {
+                    items: [
+                        { text: '卷积神经网络', link: '/deep-learning/index' },
+                    ],
                 },
             ],
             '/apply-scene/': [
