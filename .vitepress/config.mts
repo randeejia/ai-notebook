@@ -3,13 +3,12 @@ import markdownItMathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'AI学习笔记',
+    title: 'AI知识分享',
     description: 'A Notebook Site',
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '首页', link: '/' },
-            { text: '名词术语', link: '/terms/index' },
             { text: '应用场景', link: '/apply-scene/index' },
             { text: '编程语言', link: '/python-language/index' },
             { text: '机器学习', link: '/machine-learning/index' },
@@ -19,12 +18,22 @@ export default defineConfig({
         sidebar: {
             '/': [
                 {
-                    items: [{ text: '基于 AI 的思考', link: '/think' }],
+                    items: [{ text: '基于AI的思考', link: '/think' }],
                 },
             ],
 
             '/deep-learning/': [
                 {
+                    text: '名词术语',
+                    items: [
+                        {
+                            text: '卷积神经网络',
+                            link: '/deep-learning/terms/index',
+                        },
+                    ],
+                },
+                {
+                    text: '卷积神经网络',
                     items: [
                         { text: '卷积神经网络', link: '/deep-learning/index' },
                     ],
@@ -38,7 +47,7 @@ export default defineConfig({
             ],
             '/terms/': [
                 {
-                    text: 'Guide',
+                    text: '名词术语',
                     items: [
                         { text: '名词术语', link: './index' },
                         {
