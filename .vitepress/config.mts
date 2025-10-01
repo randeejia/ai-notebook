@@ -11,8 +11,9 @@ export default defineConfig({
             { text: '首页', link: '/' },
             { text: '名词术语', link: '/terms/index' },
             { text: '应用场景', link: '/apply-scene/index' },
-            { text: 'Python编程语言', link: '/python-language/index' },
-            { text: 'PyTorch框架', link: '/pytorch/index' },
+            { text: '编程语言', link: '/python-language/index' },
+            { text: '机器学习', link: '/machine-learning/index' },
+            { text: '深度学习', link: '/pytorch/index' },
         ],
 
         sidebar: {
@@ -41,17 +42,39 @@ export default defineConfig({
             ],
             '/python-language/': [
                 {
-                    text: 'Guide',
+                    text: '环境搭建',
                     items: [
                         { text: '安装', link: './index' },
                         { text: '语言基础', link: './demo' },
+                    ],
+                },
+                {
+                    text: 'Miniconda',
+                    items: [
+                        {
+                            text: '常用命令',
+                            link: '/python-language/miniconda/index',
+                        },
+                        // { text: '语言基础', link: './demo' },
+                    ],
+                },
+                {
+                    text: 'Jupyter Notebook',
+                    items: [
+                        {
+                            text: '常用命令',
+                            link: '/python-language/jupyter-notebook/index',
+                        },
                     ],
                 },
             ],
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+            {
+                icon: 'github',
+                link: 'https://github.com/randeejia/ai-notebook',
+            },
         ],
     },
     vite: {
